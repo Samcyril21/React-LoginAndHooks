@@ -1,0 +1,24 @@
+#coutdown-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 3rem;
+  background-color: rgb(16, 86, 200);
+  color: yellow ;
+  border: 10px solid  yellow;
+  border-radius: 10px;
+  height: 100px;
+  width: 200px;
+}
+#coutdown-container button{
+  background-color: yellow;
+  border: none;
+  width: 80px;
+  height: 40px;
+  border-radius: 10px;
+}
+#coutdown-container p{
+  font-size:x-large;
+  font-weight: bold;
+}

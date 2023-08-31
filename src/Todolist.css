@@ -1,0 +1,17 @@
+#taskcontainer{
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(16, 86, 200);
+  color: yellow;
+  margin: 1rem;
+  width: 200px;
+
+}
+#taskcontainer  button{
+  background-color: yellow;
+  border: 2px solid red;
+  border-radius: 5px ;
+}

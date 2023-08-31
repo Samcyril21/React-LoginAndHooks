@@ -1,0 +1,16 @@
+#timediv{
+  color: yellow;
+  background-color:rgb(16, 86, 200) ;
+  width: 30%;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 10px solid yellow;
+  border-radius: 10px;
+}
+#timediv p{
+  font-weight: bold;
+  font-size:x-large;
+  font-style: italic;
+}

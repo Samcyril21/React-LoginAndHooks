@@ -1,0 +1,19 @@
+#logincontainer{
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  width: 100%;
+  height: 100vh;
+  padding: 1rem;
+}
+#loginform{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding:3rem;
+  background-color: yellow;
+  color: rgb(16, 86, 200);
+  border: 3px solid rgb(16, 86, 200);
+  border-radius:10px;
+}
