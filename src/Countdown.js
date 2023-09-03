@@ -1,30 +1,36 @@
-import React,{useState,useEffect}from 'react';
+import React, { useState, useRef } from 'react';
 import './CountDown.css';
 
-
 function CountDown() {
-    const [countdown, setCountdown] = useState(5); 
-    let interval; 
+  const [countdown, setCountdown] = useState(0);
+  const interval = useRef();
 
-    const startCountdown = () => { 
-        interval = setInterval(() => {
-            setCountdown(prevCountdown => prevCountdown - 1);
-            
-        }, 1000);
-    }
+  const startCountdown = (value) => {
+    clearInterval(interval.current);
+    setCountdown(value);
 
-    useEffect(() => {
-        if (countdown === 0) {
-            clearInterval(interval);
-        }
-    }, [countdown]);
+    interval.current = setInterval(() => {
+      value--;
+      if (value == 0) {
+        clearInterval(interval.current);
+      }
+      setCountdown(value);
+    }, 1000);
+  };
 
-    return (
-        <div id="coutdown-container">
-            <p>{countdown}</p>
-            <button id="btn" onClick={startCountdown}><b>Start</b></button>
-        </div>
-    );
+  return (
+    <div id="coutdown-container">
+      {countdown >= 10 ? <p>00 : {countdown}</p> : <p>00 : 0{countdown}</p>}
+      <input
+        id="timeCount"
+        placeholder="Enter Seconds.."
+        onKeyDown={(e) => {
+          e.key == 'Enter' ? startCountdown(e.target.value) : null;
+        }}
+      />{' '}
+      {/* <button onClick={()=>startCountdown()}>Start</button> */}
+    </div>
+  );
 }
 
 export default CountDown;
