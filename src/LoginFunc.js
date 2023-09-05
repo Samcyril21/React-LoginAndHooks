@@ -4,7 +4,7 @@ import './LoginFunc.css';
 
 export default function Loginfunc() {
   useEffect(() => {
-    if (localStorage.getItem('true')) {
+    if (localStorage.getItem('Login')) {
       setIsLogin(true);
     }
   }, []);
@@ -49,7 +49,7 @@ export default function Loginfunc() {
         credentials[userIndex].password == userInfo.password
       ) {
         console.log('Authenticated');
-        localStorage.setItem('login', true);
+        localStorage.setItem('Login', true);
         setIsLogin(true);
       } else {
         setShowMessage('Incorrect Password');
@@ -80,7 +80,7 @@ export default function Loginfunc() {
             onChange={getInputs}
           ></input>
           <p>{showMessage}</p>
-          <button type="submit">Login</button>
+          <button type="submit" id="logi-btn">Login</button>
         </form>
       </div>
     );
