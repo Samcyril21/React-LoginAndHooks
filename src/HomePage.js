@@ -17,7 +17,7 @@ function HomePage(){
         <button onClick={()=>Changepage(1)}>CurrentTime</button>
         <button onClick={()=>Changepage(2)}>CountDown</button>
         <button onClick={()=>Changepage(3)}>Todo List</button>
-        <button onClick={()=>Changepage(2)}>API Call</button>
+        <button onClick={()=>Changepage(4)}>API Call</button>
         </div>
         
         

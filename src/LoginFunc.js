@@ -51,7 +51,6 @@ export default function Loginfunc() {
         console.log('Authenticated');
         localStorage.setItem('login', true);
         setIsLogin(true);
-        alert('Succesfully loggedIn');
       } else {
         setShowMessage('Incorrect Password');
         console.log('Incorrect Password');
