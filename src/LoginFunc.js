@@ -7,7 +7,7 @@ export default function Loginfunc() {
     if (localStorage.getItem('true')) {
       setIsLogin(true);
     }
-  });
+  },[]);
   const credentials = [
     {
       username: 'sam',
