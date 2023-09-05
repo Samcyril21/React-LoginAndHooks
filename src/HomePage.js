@@ -10,7 +10,7 @@ function HomePage() {
     setCTstate(state);
   };
   return (
-    <div>
+    <div id="homepagecon">
       <h1>Home Page</h1>
       <div className="homepage">
         <div id="navbar">
