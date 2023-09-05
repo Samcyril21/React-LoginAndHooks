@@ -3,11 +3,11 @@ import React, { useState, useEffect } from 'react';
 import './LoginFunc.css';
 
 export default function Loginfunc() {
-  useEffect(() => {
-    if (localStorage.getItem('true')) {
-      setIsLogin(true);
-    }
-  },[]);
+  // useEffect(() => {
+  //   if (localStorage.getItem('true')) {
+  //     setIsLogin(true);
+  //   }
+  // },[]);
   const credentials = [
     {
       username: 'sam',
@@ -49,7 +49,7 @@ export default function Loginfunc() {
         credentials[userIndex].password == userInfo.password
       ) {
         console.log('Authenticated');
-        localStorage.setItem('login', true);
+        // localStorage.setItem('login', true);
         setIsLogin(true);
       } else {
         setShowMessage('Incorrect Password');
