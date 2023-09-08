@@ -1,6 +1,6 @@
 import CurrentTime from './CurrentTime';
 import CountDown from './Countdown';
-import Books from './Context_Component/Books';
+import LibraryFunc from './Context_Component/Library';
 import React, { useState } from 'react';
 import TodoList from './Todolist';
 import './Homepage.css';
@@ -17,16 +17,16 @@ function HomePage() {
      return <CurrentTime />;
     }
      else if (CTstate === 2) {
-      return<CountDown />;
+      return <CountDown/>;
     }
      else if (CTstate === 3) {
-      return<TodoList />;
+      return <TodoList/>;
     }
      else if (CTstate === 4) {
-      return<h4>Page To be Create</h4>;
+      return <h4>Page To be Create</h4>;
     }
     else if (CTstate === 5) {
-      return<Books />;
+      return <LibraryFunc/>;
     }
   };
 
