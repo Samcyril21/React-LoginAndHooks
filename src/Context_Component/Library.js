@@ -1,4 +1,5 @@
 import React,{createContext} from 'react';
+import ShelvesComfunc from './Shelves'
 
 
 const LibraryContext = createContext();
@@ -18,7 +19,8 @@ function Library(){
     <LibraryContext.Provider value={librarydetails}>
       <BookContext.Provider value={bookdetails}>
         <div>
-          <h1>Hello, This Is Library Component</h1>
+          <h1>Hello, This Is a Library Component</h1>
+          <ShelvesComfunc/>
         </div>
         </BookContext.Provider>
       </LibraryContext.Provider>
